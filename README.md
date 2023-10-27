@@ -9,7 +9,7 @@ Filter issues by multiple labels, author, and search by title and description.
 Create new issues for a project with a title, description, labels, and author.
 ## Installation
 # Clone the repository
-git clone 
+git clone https://github.com/ashishmirajkar/issue-tracker.git 
 
 # Navigate to the project directory
 cd issue-tracker
