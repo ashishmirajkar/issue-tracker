@@ -1,0 +1,15 @@
+"use strict";
+
+var mongoose = require('mongoose');
+
+var url = 'mongodb+srv://premyadav18520:premkumar412@cluster0.htzhdao.mongodb.net/'; // mongoose.connect('url') 
+
+mongoose.connect(url);
+var db = mongoose.connection; //If any Error then Getting this Line
+
+db.on('error', console.error.bind(console, "Error connecting to MongoDB"));
+db.once('open', function () {
+  console.log("Connected to Database :: MongoDB ");
+});
+module.exports = db; //Exports db
+//# sourceMappingURL=mongoose.dev.js.map
